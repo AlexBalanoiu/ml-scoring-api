@@ -1,0 +1,2 @@
+2026-06-25 00:28:54 | INFO | main | Received application | age=35 income=50000.0 loan=10000.0 credit=680
+2026-06-25 00:28:54 | INFO | main | Result | risk_score=0.4173 risk_category=MEDIUM
