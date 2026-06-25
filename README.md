@@ -14,13 +14,7 @@ A production-style REST API built with FastAPI that evaluates loan applications 
 
 ## Risk Scoring Formula
 
-The risk score is a weighted sum of three normalized components:
-
-| Component | Weight | Logic |
-|---|---|---|
-| Credit Score | 40% | Higher score → lower risk |
-| Debt-to-Income Ratio | 35% | `loan_amount / income`, capped at 10x |
-| Age | 25% | Parabolic curve, lowest risk around age 35–45 |
+The risk score is a pretraied ml simple regression model
 
 **Categories:**
 - `LOW` → score < 0.3
