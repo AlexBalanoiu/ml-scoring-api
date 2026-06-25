@@ -7,9 +7,7 @@ A production-style REST API built with FastAPI that evaluates loan applications 
 - `POST /predict` – scores a loan application
 - `GET /health` – health check endpoint
 - Pydantic v2 input validation with descriptive error messages
-- Weighted scoring formula based on credit score, debt-to-income ratio, and age
 - Logging to both console and file
-- Fully configurable via environment variables
 - Dockerized for easy deployment
 
 ## Risk Scoring Formula
