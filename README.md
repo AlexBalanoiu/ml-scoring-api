@@ -53,36 +53,6 @@ curl -X POST http://localhost:8000/predict \
 }
 ```
 
-## Configuration
-
-Copy `.env.example` to `.env` and adjust as needed:
-
-| Variable | Default | Description |
-|---|---|---|
-| `APP_PORT` | `8000` | Server port |
-| `LOG_LEVEL` | `INFO` | Logging level |
-| `LOG_FILE` | `logs/app.log` | Log file path |
-| `LOW_THRESHOLD` | `0.3` | Score below this → LOW |
-| `HIGH_THRESHOLD` | `0.7` | Score above this → HIGH |
-| `WEIGHT_CREDIT_SCORE` | `0.4` | Weight for credit score component |
-| `WEIGHT_DEBT_RATIO` | `0.35` | Weight for debt-to-income component |
-| `WEIGHT_AGE` | `0.25` | Weight for age component |
-
-## Project Structure
-
-```
-app/
-├── main.py               # FastAPI app and routes
-├── models.py             # Pydantic input/output models
-├── config.py             # Environment variable config
-├── services/
-│   └── scoring_service.py  # Risk scoring logic
-└── utils/
-    └── logger.py         # Logging setup
-Dockerfile
-requirements.txt
-.env.example
-```
 
 ## Input Validation Rules
 
